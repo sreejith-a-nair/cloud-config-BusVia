@@ -5,6 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
+<<<<<<< HEAD
 		<version>3.1.7</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
@@ -29,6 +30,24 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+=======
+		<version>2.7.14</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.example.mediconnect</groupId>
+	<artifactId>ConfigServer</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>ConfigServer</name>
+	<description>Demo project for Spring Boot</description>
+	<properties>
+		<java.version>17</java.version>
+		<spring-cloud.version>2021.0.8</spring-cloud.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-config-server</artifactId>
+>>>>>>> c80729fd376a6f3205f7ec27885c5e6da6afdf20
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -36,6 +55,7 @@
 		</dependency>
 
 		<dependency>
+<<<<<<< HEAD
 			<groupId>com.mysql</groupId>
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
@@ -46,10 +66,13 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
+=======
+>>>>>>> c80729fd376a6f3205f7ec27885c5e6da6afdf20
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
@@ -96,6 +119,10 @@
 			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
+=======
+	</dependencies>
+
+>>>>>>> c80729fd376a6f3205f7ec27885c5e6da6afdf20
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -113,6 +140,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+<<<<<<< HEAD
 				<configuration>
 					<image>
 						<builder>paketobuildpacks/builder-jammy-base:latest</builder>
@@ -126,6 +154,11 @@
 				</configuration>
 			</plugin>
 		</plugins>
+=======
+			</plugin>
+		</plugins>
+<!--		<finalName>mediconnect-config-server</finalName>-->
+>>>>>>> c80729fd376a6f3205f7ec27885c5e6da6afdf20
 	</build>
 
 </project>

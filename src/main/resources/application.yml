@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 spring:
   application:
     name: "auth-service"
@@ -18,3 +19,44 @@ spring:
 #
 #server:
 #  port : 9090
+=======
+server:
+  port: 9296
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sreejith-a-nair/cloud-config
+          clone-on-start: true
+
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
+
+
+#server:
+#  port: 9296
+#spring:
+#  application:
+#    name: CONFIG-SERVER
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/sreejith-a-nair/cloud-config
+#          clone-on-start: true
+#
+#eureka:
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
+>>>>>>> c80729fd376a6f3205f7ec27885c5e6da6afdf20
