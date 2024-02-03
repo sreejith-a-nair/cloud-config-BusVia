@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/suhanmhd/MediConnect-ConfigServer.git
+          uri: https://github.com/sreejith-a-nair/cloud-config
           clone-on-start: true
 
 
@@ -16,6 +16,24 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: ${EUREKA_SERVER_ADDRESS:http://13.126.252.14:8761/eureka}
+      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
 
 
+#server:
+#  port: 9296
+#spring:
+#  application:
+#    name: CONFIG-SERVER
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/sreejith-a-nair/cloud-config
+#          clone-on-start: true
+#
+#eureka:
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}

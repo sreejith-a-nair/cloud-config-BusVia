@@ -33,6 +33,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -52,7 +53,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>mediconnect-config-server</finalName>
+<!--		<finalName>mediconnect-config-server</finalName>-->
 	</build>
 
 </project>
